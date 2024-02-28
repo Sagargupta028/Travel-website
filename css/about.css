@@ -1,0 +1,271 @@
+/* ######################################## HEADER ######################################## */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Poppins:ital,wght@1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    height: 8rem;
+    
+    background-color: #263238;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+
+
+}
+
+.header .navbar .logo{
+    float: left;
+    height: 5rem;
+    margin-top: 1.2em;
+    
+}
+.header .navbar a{
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+   
+}
+
+ul li{
+    
+    display: inline-block;
+    list-style: none;
+    margin-left: 1rem;
+    margin-bottom: 0.5em;
+    margin-left: 1.5em;
+    margin-top: 2.7em;
+}
+.header .navbar .nav-items{
+    float: right;
+    
+    
+}
+
+
+.navbar li:hover{
+    
+    transform: scale(1.2);
+   
+    
+}
+
+
+/* ###################################### BODY ##################################### */
+
+
+
+.heading{
+    margin-top: 1.5em;
+    font-size: 3rem;
+    font-weight: 500;
+    color: rgb(69, 69, 69);
+    border-bottom: 4px solid rgb(212, 34, 34);
+    padding:0.4em;
+}
+  
+.text{
+    font-size: 1.5rem;
+    margin-top: 1em;
+}
+
+
+.line{
+    display: block;
+    
+    
+}
+
+.left-content{
+    width: 50%;
+    float: left;
+    margin-top: 1em;
+}
+
+.right-content{
+    
+    width: 50%;
+    float: left;
+    margin-top: 1em;
+}
+.about-content::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+.about-content{
+    text-align: center  ;
+    font-size: 1.5rem;
+    line-height: 0.005rem;
+    letter-spacing: 0.15rem;
+    word-spacing: 0.25rem;
+    font-weight: 500;
+}
+.about-content li::before{
+    content: '\2713';
+    color: rgb(212, 34, 34);
+    font-weight: 700;
+    padding-right: 1rem;
+}
+.number{
+    font-size: 2.5rem;
+    color: rgb(212, 34, 34);
+    font-weight: 700;
+    margin-top: 1em;
+   
+}
+.lg-head{
+    display: inline-block;
+}
+
+.mg-body{
+    color: #263238;
+}
+.first{
+    float: left;
+    width: 25%;
+    text-align: center;
+    
+}
+
+.second{
+    float: left;
+    width: 25%;
+    text-align: center;
+    
+}
+
+.third{
+    float: left;
+    width: 25%;
+    text-align: center;
+    
+}
+.fourth{
+    float: left;
+    width: 25%;
+    text-align: center;
+    
+}
+.number::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.contact-box{
+   
+    font-size: 3rem;
+    margin-top: 2em;
+    height: 3em;
+    padding-top: 0;
+    background: linear-gradient(rgb(218, 59, 59), rgb(226, 43, 104) );
+    box-shadow: 0.5rem 0.5rem 1rem darkgray;
+    color: white;
+    font-weight: 500;
+}
+.comment{
+    display: inline-block;
+    word-spacing: 0.25rem;
+    letter-spacing: 0.15rem;
+}
+.contact-box .btn{
+    display: inline-block;
+    margin-left: 5.8em;
+    margin-top: 0.25em;
+    border: 0.15em solid white;
+    padding: 0.5em;
+}
+.contact-button{
+    text-decoration: none;
+    color: white;
+    letter-spacing: 0.15rem;
+
+}
+
+
+/* #################################################MEDIA QUERY################################ */
+
+@media (max-width: 500px){
+    html{
+        font-size: 7px;
+    }
+
+    .header .navbar .logo{
+        float: none;
+        display: block;
+        margin-left: 40%;
+        margin-top: 0;
+    }
+
+    .header .navbar .nav-items{
+        float: none;
+        text-align: center;
+    }
+    ul{
+    
+        margin-top: -2.5em;
+    }
+    .container{
+        max-width: 85%;
+    }
+
+    .contact-box{
+        height: 6em;
+        text-align: center;
+    }
+    .contact-box .btn{
+        margin-left: 8%;
+    }
+}
+
+
+
+@media (min-width: 501px) and (max-width: 1200px){
+    html{
+        font-size: 7px;
+    }
+
+    .header .navbar .logo{
+        float: none;
+        display: block;
+        margin-left: 40%;
+        margin-top: 0;
+    }
+
+    .header .navbar .nav-items{
+        float: none;
+        text-align: center;
+    }
+    ul{
+    
+        margin-top: -2.5em;
+    }
+    .container{
+        max-width: 85%;
+    }
+
+    .contact-box{
+        height: 6em;
+        text-align: center;
+    }
+    .contact-box .btn{
+        margin-left: 8%;
+    }
+}
